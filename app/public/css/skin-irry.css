@@ -1,0 +1,17 @@
+.logo {
+	height: 30px;
+}
+
+.skin-irry {}
+
+.skin-irry .navbar {
+	background-color: #1e4f71;
+}
+
+.skin-irry .sb-topnav.navbar-dark #sidebarToggle {
+  color: rgba(0, 198, 216, 0.7);
+}
+
+.skin-irry .nav-link {
+	color: rgba(0, 198, 216, 0.7); /* #00c6d8; */
+}
