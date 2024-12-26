@@ -8,10 +8,32 @@
 	background-color: #1e4f71;
 }
 
+.skin-irry #layoutSidenav_content {
+    background-color: #dce5ee;
+}
+
 .skin-irry .sb-topnav.navbar-dark #sidebarToggle {
   color: rgba(0, 198, 216, 0.7);
 }
 
 .skin-irry .nav-link {
 	color: rgba(0, 198, 216, 0.7); /* #00c6d8; */
+}
+
+.skin-irry .sb-sidenav-menu .nav-link  {
+	color: #ccc;
+}
+
+.skin-irry .sb-sidenav-menu .nav-link:hover  {
+	/*color: #eee;*/ color: #00c6d8; background-color: #181b1f; border-left: 2px solid #0ac;
+}
+
+.skin-irry .sb-sidenav-menu .nav-link .sb-nav-link-icon  {
+	color: inherit; margin-right: 1rem;
+}
+
+.skin-irry {
+	h1, h2, h3, h4 {
+		color: #174069;
+	}
 }
