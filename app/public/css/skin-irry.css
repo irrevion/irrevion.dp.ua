@@ -36,4 +36,7 @@
 	h1, h2, h3, h4 {
 		color: #174069;
 	}
+	img.mini {
+		max-width: 50%;
+	}
 }
