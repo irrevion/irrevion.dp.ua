@@ -8,6 +8,18 @@
 	background-color: #1e4f71;
 }
 
+.skin-irry footer {
+	background-color: #1e4f71; color: #00c6d8;
+}
+
+.skin-irry footer a {
+	color: #00c6d8;
+}
+
+.skin-irry footer a:hover {
+	color: #0ff;
+}
+
 .skin-irry #layoutSidenav_content {
     background-color: #dce5ee;
 }
