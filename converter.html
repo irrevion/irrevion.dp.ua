@@ -16,7 +16,10 @@
 
         <link href="app/public/css/styles.css" rel="stylesheet" />
         <link href="app/public/css/skin-irry.css" rel="stylesheet" />
+        <link href="app/public/js/hljs/styles/github.css" rel="stylesheet" />
+
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+		<script src="app/public/js/hljs/highlight.min.js"></script>
 
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNP0TJTCGW"></script>
@@ -161,14 +164,15 @@ gtag('config', 'G-VNP0TJTCGW');
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Converter</h1>
 
-                        <!-- <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Charts</li>
-                        </ol> -->
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                            <li class="breadcrumb-item"><i class="fa-solid fa-laptop-code"></i> Apps</li>
+                            <li class="breadcrumb-item active"><i class="fas fa-tachometer-alt"></i> Converter</li>
+                        </ol>
 
                         <div class="card mb-4">
                             <div class="card-body">
-<img src="app/public/img/astrolabia7.jpg" alt="Telescope at night with moon and big city on background" class="float-end img-thumbnail mini" />
+<img src="app/public/img/astrolabia7.jpg" alt="Icon of converter application with astrolabia and scales" class="float-end img-thumbnail mini" />
 
 <p>
 <strong>The converter is designed to transform physical quantities from one unit of measurement to another. Try it <a href="https://science.irrevion.dp.ua/Converter" target="_blank">🌍 here</a>.</strong>
@@ -226,11 +230,14 @@ After all, 📐 size isn't everything — scale matters far more.
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div>Copyleft <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC<i class="fa-brands fa-creative-commons-zero"></i></a> Irrevion 2023 &ndash; 2025</div>
-                            <!-- <div>
-                                <a href="#">Privacy Policy</a>
+
+                            <div>
+                                <a href="https://github.com/irrevion" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
                                 &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div> -->
+                                <a href="https://x.com/irrevion_" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                &middot;
+                                <a href="https://www.linkedin.com/company/irrevion-science/" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
                         </div>
                     </div>
                 </footer>
@@ -238,5 +245,6 @@ After all, 📐 size isn't everything — scale matters far more.
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="app/public/js/scripts.js"></script>
+		<script>hljs.highlightAll();</script>
     </body>
 </html>

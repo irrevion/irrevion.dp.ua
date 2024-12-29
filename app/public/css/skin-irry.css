@@ -5,7 +5,7 @@
 .skin-irry {}
 
 .skin-irry .navbar {
-	background-color: #1e4f71;
+	background-color: #1e4f71; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 0 0 rgba(255,255,255,0.15);
 }
 
 .skin-irry footer {
@@ -53,6 +53,9 @@
 }
 
 .skin-irry {
+	a {
+		color: #1e4f71;
+	}
 	h1, h2, h3, h4 {
 		color: #174069;
 	}
