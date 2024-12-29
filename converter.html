@@ -13,7 +13,6 @@
 		<!-- <link rel="icon" href="favicon.svg" type="image/svg+xml" /> -->
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 		<link rel="manifest" href="site.webmanifest" />
-		<link rel="canonical" href="https://irrevion.dp.ua/" />
 
         <link href="app/public/css/styles.css" rel="stylesheet" />
         <link href="app/public/css/skin-irry.css" rel="stylesheet" />
@@ -63,11 +62,11 @@ gtag('config', 'G-VNP0TJTCGW');
                     <div class="sb-sidenav-menu">
                         <div class="nav">
 							<div class="sb-sidenav-menu-heading">Menu</div>
-							<a class="nav-link active" href="index.html">
+							<a class="nav-link" href="index.html">
 								<div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
 								Home
 							</a>
-							<a class="nav-link" href="converter.html" data-old_href="https://science.irrevion.dp.ua/Converter">
+							<a class="nav-link active" href="converter.html">
 								<div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
 								Converter
 							</a>
@@ -160,7 +159,7 @@ gtag('config', 'G-VNP0TJTCGW');
             <div id="layoutSidenav_content">
                 <main class="mb-4">
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Home</h1>
+                        <h1 class="mt-4">Converter</h1>
 
                         <!-- <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
@@ -169,18 +168,46 @@ gtag('config', 'G-VNP0TJTCGW');
 
                         <div class="card mb-4">
                             <div class="card-body">
-<img src="app/public/img/telescope.jpg" alt="Telescope at night with moon and big city on background" class="float-end img-thumbnail mini" />
-<p><strong>Intellectual heritage, accessible to everyone, free of charge, and everywhere, is a necessary condition and a guarantee for the survival, development, and expansion of humanity as a species.</strong></p>
-<p><strong>Irrevion Science</strong> is a resource dedicated to developing applied tools for scientific calculations. The website is currently in its early development stage.</p>
-<p>At the moment, the following projects are available or in development:<br />
-<a href="https://github.com/irrevion/science" target="_blank">⚛️ irrevion/science</a> — a mathematical library in PHP;<br />
-<a href="https://github.com/irrevion/irry_cms" target="_blank">🛠 IrryCMS</a> — a lightweight admin panel for website content management (PHP);<br />
-<a href="https://github.com/irrevion/science-ui" target="_blank">🧮 Science UI</a> — a front-end interface demonstrating API capabilities, such as a <a href="https://science.irrevion.dp.ua/Converter" target="_blank">⏲ Unit Converter</a> (React);<br />
-<a href="https://github.com/irrevion/science-api" target="_blank">📡 Science API</a> — an API for performing physical and mathematical calculations (PHP, Yii2);<br />
-<a href="https://github.com/irrevion/game-penguin-on-iceberg" target="_blank">🐧 Penguin@Iceberg</a> — a <a href="https://games.irrevion.dp.ua/penguin-on-iceberg/" target="_blank">mini-game</a> built in pure JavaScript where you must prevent a penguin from falling off the ice floe.<br />
+<img src="app/public/img/astrolabia7.jpg" alt="Telescope at night with moon and big city on background" class="float-end img-thumbnail mini" />
+
+<p>
+<strong>The converter is designed to transform physical quantities from one unit of measurement to another. Try it <a href="https://science.irrevion.dp.ua/Converter" target="_blank">🌍 here</a>.</strong>
 </p>
+<p>
+At first glance, most operating systems already come with a calculator that can handle conversions between various scales. So, why create another one? With just two clicks, you can find out that 9 Mach 🚀 equals 5953.927 🛳 knots or 12.46 jet ✈ airplanes. And did you know that a long ton equals 0.25 🐘 elephants?
+</p>
+<p>
+But what if you need to convert 🌌 gigaparsecs into meters? Or transform mass from ☀ solar units into kilograms? For such cases, there are excellent tools like <a href="https://www.unitconverters.net/" target="_blank">🌍&nbsp;unitconverters.net</a>.
+</p>
+<p>
+The goal of creating <a href="https://science.irrevion.dp.ua/Converter" target="_blank">this ⏲ converter</a> was to offer a user-friendly and streamlined interface while maintaining high precision in results... and more. The converter is a byproduct of the PHP library <a href="https://github.com/irrevion/science" target="_blank">⚛️ irrevion/science</a>, which allows for easy handling and conversion of values across different systems of measurement. For example:<br />
+
+<pre>
+<code data-language="php" class="language-php">
+$x = new Quantity(250e6, IAU::light_year);
+$y = $x->convert(IAU::parsec);
+print "$x is $y \n";
+</code>
+</pre>
+
+This code will output:
+<samp>250000000 ly is 76650348.446388 pc</samp>.
+
+</p>
+<p>
+This module was used to develop the API that powers the converter's calculations.
+A complete list of all available quantities can be found in the <a href="https://irrevion.github.io/science/docs/Physics/Entities/Quantity.html" target="_blank">📖 documentation</a>, which is constantly being updated.
+</p>
+<p>
+The converter doesn’t aim to include every historical, national, outdated, or obsolete unit of measurement. The focus is on molecular and quantum physics, astronomy, and practically used unit systems.
+</p>
+<p>
+After all, 📐 size isn't everything — scale matters far more.
+</p>
+
 <hr />
-<p>🖼 Image is generated by <a href="https://freepik.com/" target="_blank">🌍 Freepik</a></p>
+
+<p>🖼 Image is generated by <a href="https://x.com/i/grok?focus=1" target="_blank">🌍 Grok</a></p>
 <p>📄 Text is edited by <a href="https://chatgpt.com/" target="_blank">🌍 ChatGPT</a></p>
                             </div>
                         </div>

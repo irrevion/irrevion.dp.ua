@@ -37,11 +37,19 @@
 }
 
 .skin-irry .sb-sidenav-menu .nav-link:hover  {
-	/*color: #eee;*/ color: #00c6d8; background-color: #181b1f; border-left: 2px solid #0ac;
+	color: #00c6d8; background-color: #181b1f; border-left: 2px solid #0ac;
+}
+
+.skin-irry .sb-sidenav-menu .nav-link.active  {
+	color: #0698a5; background-color: #181b1f; border-left: 2px solid #0698a5;
 }
 
 .skin-irry .sb-sidenav-menu .nav-link .sb-nav-link-icon  {
 	color: inherit; margin-right: 1rem;
+}
+
+.skin-irry .sb-sidenav-menu .nav-link.active .sb-nav-link-icon  {
+	color: inherit;
 }
 
 .skin-irry {
@@ -50,5 +58,8 @@
 	}
 	img.mini {
 		max-width: 50%;
+	}
+	.card {
+		background-color: #d1dced; /* #c2cee1; */
 	}
 }
