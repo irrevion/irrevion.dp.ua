@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="рішення для наукових розрахунків" />
+        <meta name="author" content="Valentin Belousov" />
+
+        <title>Конвертер - Irrevion Science</title>
+
+		<base href="../" />
+
+		<link rel="icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<link rel="manifest" href="site.webmanifest" />
+		<link rel="canonical" href="https://irrevion.dp.ua/ua/converter.html" />
+		<link rel="alternate" href="https://irrevion.dp.ua/converter.html" hreflang="en" />
+
+		<link rel="stylesheet" href="app/public/css/styles.css" />
+		<link rel="stylesheet" href="app/public/css/skin-irry.css" />
+		<link rel="stylesheet" href="app/public/css/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css" />
+		<link rel="stylesheet" href="app/public/js/hljs/styles/github.css" />
+
+		<script src="app/public/js/fa6.js"></script>
+		<script src="app/public/js/hljs/highlight.min.js"></script>
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNP0TJTCGW"></script>
+		<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-VNP0TJTCGW');
+		</script>
+    </head>
+    <body class="sb-nav-fixed skin-irry">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand" href="index.html"><img src="app/public/img/logo-slim.png" alt="Irrevion Science" class="logo" /></a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+
+            <ul class="navbar-nav ms-auto me-1 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-translate" title="перекласти іншою мовою"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="converter.html">English <img src="app/public/img/flag/en.png"  class="flag" /></a></li>
+                        <li><a class="dropdown-item active" href="ua/converter.html"><i class="bi bi-check"></i> Українська <img src="app/public/img/flag/ua.png" class="flag" /></a></li>
+					</ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+							<div class="sb-sidenav-menu-heading">Меню</div>
+							<a class="nav-link" href="ua/index.html">
+								<div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+								Головна
+							</a>
+							<a class="nav-link active" href="ua/converter.html">
+								<div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+								Конвертер
+							</a>
+
+                            <div class="sb-sidenav-menu-heading">Проєкти</div>
+							<a class="nav-link" href="https://packagist.org/packages/irrevion/science" target="_blank">
+								<div class="sb-nav-link-icon"><i class="fa-solid fa-atom"></i></div>
+								Science PHP
+							</a>
+							<a class="nav-link" href="https://science.irrevion.dp.ua/Converter" target="_blank">
+								<div class="sb-nav-link-icon"><i class="fa-solid fa-gauge-high"></i></div>
+								Science UI
+							</a>
+							<a class="nav-link" href="https://github.com/irrevion/irry_cms" target="_blank">
+								<div class="sb-nav-link-icon"><i class="fa-solid fa-screwdriver-wrench"></i></i></div>
+								IrryCMS
+							</a>
+							<a class="nav-link" href="https://games.irrevion.dp.ua/penguin-on-iceberg/" target="_blank">
+								<div class="sb-nav-link-icon"><i class="fa-solid fa-gamepad"></i></div>
+								Пінгвін на айсбергу
+							</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main class="mb-4">
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Конвертер</h1>
+
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="ua/index.html"><i class="fas fa-home"></i> Головна</a></li>
+                            <li class="breadcrumb-item"><i class="fa-solid fa-laptop-code"></i> Застосункі</li>
+                            <li class="breadcrumb-item active"><i class="fas fa-tachometer-alt"></i> Конвертер</li>
+                        </ol>
+
+                        <div class="card mb-4">
+                            <div class="card-body">
+<img src="app/public/img/astrolabia7.jpg" alt="Піктограма програми конвертера з астролябією та вагами" class="float-end img-thumbnail mini" />
+
+<p>
+<strong>Конвертер призначений для перетворення фізичних величин з одних одиниць вимірювання в інші. <a href="https://science.irrevion.dp.ua/Converter" target="_blank">🌍 Спробувати можна тут.</a></strong>
+</p>
+<p>
+Здавалось би, у більшості операційних систем вже є калькулятор із функцією перетворення значень між різними шкалами. То навіщо потрібен ще один? За два кліки можна дізнатися, що 9 чисел Маха 🚀 – це 5953.927 🛳 вузлів або 12.46 реактивних ✈ літаків. А ще в довгій тонні 0.25 🐘 слонів!
+</p>
+<p>
+Але що робити, якщо потрібно перевести 🌌 гігапарсеки в метри? Або масу із ☀ сонячних одиниць у кілограми? Для цього також існують чудові рішення, наприклад <a href="https://www.unitconverters.net/" target="_blank">🌍&nbsp;unitconverters.net</a>.
+</p>
+<p>
+Метою створення цього <a href="https://science.irrevion.dp.ua/Converter" target="_blank">⏲ конвертера</a> було забезпечення зручного, ненавантаженого інтерфейсу із збереженням високої точності результатів... і не тільки. Конвертер є побічним продуктом PHP-бібліотеки <a href="https://github.com/irrevion/science" target="_blank">⚛️ irrevion/science</a>, яка дозволяє легко працювати з величинами і перетворювати їх між різними системами одиниць вимірювання. Наприклад:<br />
+
+<pre>
+<code data-language="php" class="language-php">
+use irrevion\science\Physics\Entities\Quantity;
+use irrevion\science\Physics\Unit\{SI, Planck, IAU, CGS, Natural, NonStandard, Imperial, USC};
+
+$x = new Quantity(250e6, IAU::light_year);
+$y = $x->convert(IAU::parsec);
+print "$x is $y \n";
+</code>
+</pre>
+
+Цей код виведе:
+<samp>250000000 ly is 76650348.446388 pc</samp>.
+
+</p>
+<p>
+Цей модуль був використаний для розробки API, яке забезпечує обчислення в конвертері.
+Повний список усіх доступних величин можна переглянути в <a href="https://irrevion.github.io/science/docs/Physics/Entities/Quantity.html" target="_blank">📖 документації</a>, яка постійно оновлюється.
+</p>
+<p>
+Завдання конвертера не включає створення каталогу всіх існуючих і тих, що існували, шкал величин, а також національних, застарілих чи тих, що вийшли з ужитку, одиниць вимірювання. Основна увага зосереджена на молекулярній, квантовій фізиці, астрономії та системах одиниць, що використовуються на практиці.
+</p>
+<p>
+Зрештою, 📐 розмір не головне — масштаб набагато важливіший.
+</p>
+
+<hr />
+
+<p>🖼 Зображення створено <a href="https://x.com/i/grok?focus=1" target="_blank">🌍 Grok</a></p>
+<p>📄 Текст редагувався <a href="https://chatgpt.com/" target="_blank">🌍 ChatGPT</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <footer class="py-4 mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div>Copyleft <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC<i class="fa-brands fa-creative-commons-zero"></i></a> Irrevion 2023 &ndash; 2025</div>
+
+                            <div>
+                                <a href="https://github.com/irrevion" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                &middot;
+                                <a href="https://x.com/irrevion_" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                &middot;
+                                <a href="https://www.linkedin.com/company/irrevion-science/" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		<script src="app/public/js/scripts.js"></script>
+		<script>hljs.highlightAll();</script>
+    </body>
+</html>
