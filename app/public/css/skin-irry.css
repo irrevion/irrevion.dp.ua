@@ -102,3 +102,40 @@
 		background-color: #d1dced; /* #c2cee1; */
 	}
 }
+
+
+/* Dark mode */
+
+[data-bs-theme=dark] .skin-irry #layoutSidenav_content {
+	background-color: #181b1f; /* #1a1e21; */
+}
+
+[data-bs-theme=dark] .skin-irry {
+    h1, h2, h3, h4 {
+		color: #0698a5;
+	}
+	.sb-sidenav-menu .nav-link {
+		/* color: #aaa; */
+	}
+	.dropdown .dropdown-menu {
+		background-color: #212529;
+	}
+	.dropdown .dropdown-menu .dropdown-item:hover {
+		background-color: #3c4146;
+	}
+	.card {
+		background-color: #212529;
+	}
+	.card-body {
+		color: #bbb;
+	}
+	a {
+		color: #0698a5;
+	}
+	a:hover {
+		color: #0ff;
+	}
+	footer {
+		background-color: #082e48;
+	}
+}
