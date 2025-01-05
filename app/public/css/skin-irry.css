@@ -4,6 +4,10 @@
 
 .skin-irry {}
 
+.skin-irry .sb-topnav.navbar-dark #sidebarToggle:hover {
+	color: #0ff;
+}
+
 .skin-irry .navbar {
 	background-color: #1e4f71; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 0 0 rgba(255,255,255,0.15);
 }
@@ -18,6 +22,10 @@
 
 .skin-irry .navbar-nav .dropdown-menu li:first-child {
 	margin-top: 0;
+}
+
+.skin-irry .navbar-nav .dropdown-toggle:hover {
+	color: #0ff;
 }
 
 .skin-irry .dropdown-item {
