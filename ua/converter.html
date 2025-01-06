@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk" data-bs-theme="dark">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,12 +17,14 @@
 		<link rel="canonical" href="https://irrevion.dp.ua/ua/converter.html" />
 		<link rel="alternate" href="https://irrevion.dp.ua/converter.html" hreflang="en" />
 
-		<link rel="stylesheet" href="app/public/css/styles.css" />
+		<link rel="stylesheet" href="app/public/css/bootstrap-5.3.3/css/bootstrap.css" />
+		<link rel="stylesheet" href="app/public/css/sb-admin-7.0.7.css" />
 		<link rel="stylesheet" href="app/public/css/skin-irry.css" />
 		<link rel="stylesheet" href="app/public/css/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css" />
 		<link rel="stylesheet" href="app/public/js/hljs/styles/github.css" />
 
 		<script src="app/public/js/fa6.js"></script>
+		<script src="app/public/js/color-theme-toggler.js"></script>
 		<script src="app/public/js/hljs/highlight.min.js"></script>
 
 		<!-- Google tag (gtag.js) -->
@@ -49,6 +51,15 @@ gtag('config', 'G-VNP0TJTCGW');
                         <li><a class="dropdown-item active" href="ua/converter.html"><i class="bi bi-check"></i> Українська <img src="app/public/img/flag/ua.png" class="flag" /></a></li>
 					</ul>
                 </li>
+
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMode" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Toggle theme"><i class="bi bi-sun-fill"></i></a>
+					<ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="navbarDropdownMode">
+                        <li><a href="#" class="dropdown-item" data-bs-theme-value="light" aria-pressed="false"><i class="bi bi-sun-fill"></i> Light</a></li>
+                        <li><a href="#" class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false"><i class="bi bi-moon-stars-fill"></i> Dark</a></li>
+                        <li><a href="#" class="dropdown-item active" data-bs-theme-value="auto" aria-pressed="true"><i class="bi bi-circle-half"></i> Auto</a></li>
+					</ul>
+				</li>
             </ul>
         </nav>
 
