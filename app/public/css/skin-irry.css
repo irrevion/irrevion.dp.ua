@@ -123,6 +123,9 @@
 	.dropdown .dropdown-menu .dropdown-item:hover {
 		background-color: #3c4146;
 	}
+	.dropdown .dropdown-menu .dropdown-item:focus {
+		background-color: #2b3035;
+	}
 	.card {
 		background-color: #212529;
 	}
