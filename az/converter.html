@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="az" data-bs-theme="dark">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="solutions for scientific calculations" />
+        <meta name="description" content="elmi hesablamalar üçün həllər" />
         <meta name="author" content="Valentin Belousov" />
 
-        <title>Converter - Irrevion Science</title>
+        <title>Konvertor - Irrevion Science</title>
+
+		<base href="../" />
 
 		<link rel="icon" href="favicon.ico" />
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 		<link rel="manifest" href="site.webmanifest" />
-		<link rel="canonical" href="https://irrevion.dp.ua/converter.html" />
+		<link rel="canonical" href="https://irrevion.dp.ua/az/converter.html" />
+		<link rel="alternate" href="https://irrevion.dp.ua/converter.html" hreflang="en" />
 		<link rel="alternate" href="https://irrevion.dp.ua/uk/converter.html" hreflang="uk" />
-		<link rel="alternate" href="https://irrevion.dp.ua/az/converter.html" hreflang="az" />
 
-        <link rel="stylesheet" href="app/public/css/bootstrap-5.3.3/css/bootstrap.css" />
+		<link rel="stylesheet" href="app/public/css/bootstrap-5.3.3/css/bootstrap.css" />
 		<link rel="stylesheet" href="app/public/css/sb-admin-7.0.7.css" />
-        <link rel="stylesheet" href="app/public/css/skin-irry.css" />
-        <link rel="stylesheet" href="app/public/css/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css" />
-        <link rel="stylesheet" href="app/public/js/hljs/styles/github.css" />
+		<link rel="stylesheet" href="app/public/css/skin-irry.css" />
+		<link rel="stylesheet" href="app/public/css/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css" />
+		<link rel="stylesheet" href="app/public/js/hljs/styles/github.css" />
 
 		<script src="app/public/js/fa6.js"></script>
 		<script src="app/public/js/color-theme-toggler.js"></script>
@@ -44,20 +46,20 @@ gtag('config', 'G-VNP0TJTCGW');
 
             <ul class="navbar-nav ms-auto me-1 me-lg-4">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-translate" title="Translate"></i></a>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-translate" title="digər dillərdə"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item active" href="converter.html"><i class="bi bi-check"></i> English <img src="app/public/img/flag/en.png" class="flag" /></a></li>
+                        <li><a class="dropdown-item" href="converter.html">English <img src="app/public/img/flag/en.png" class="flag" /></a></li>
                         <li><a class="dropdown-item" href="uk/converter.html">Українська <img src="app/public/img/flag/ua.png" class="flag" /></a></li>
-                        <li><a class="dropdown-item" href="az/converter.html">Azərbaycan <img src="app/public/img/flag/az.png" class="flag" /></a></li>
+                        <li><a class="dropdown-item active" href="az/index.html"><i class="bi bi-check"></i> Azərbaycan <img src="app/public/img/flag/az.png" class="flag" /></a></li>
 					</ul>
                 </li>
 
 				<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMode" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Toggle theme"><i class="bi bi-sun-fill"></i></a>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMode" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Rəng rejimi seçin"><i class="bi bi-sun-fill"></i></a>
 					<ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="navbarDropdownMode">
-                        <li><a href="#" class="dropdown-item" data-bs-theme-value="light" aria-pressed="false"><i class="bi bi-sun-fill"></i> Light</a></li>
-                        <li><a href="#" class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false"><i class="bi bi-moon-stars-fill"></i> Dark</a></li>
-                        <li><a href="#" class="dropdown-item active" data-bs-theme-value="auto" aria-pressed="true"><i class="bi bi-circle-half"></i> Auto</a></li>
+                        <li><a href="#" class="dropdown-item" data-bs-theme-value="light" aria-pressed="false"><i class="bi bi-sun-fill"></i> Açıq</a></li>
+                        <li><a href="#" class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false"><i class="bi bi-moon-stars-fill"></i> Tünd</a></li>
+                        <li><a href="#" class="dropdown-item active" data-bs-theme-value="auto" aria-pressed="true"><i class="bi bi-circle-half"></i> Sistem</a></li>
 					</ul>
 				</li>
             </ul>
@@ -68,17 +70,17 @@ gtag('config', 'G-VNP0TJTCGW');
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-							<div class="sb-sidenav-menu-heading">Menu</div>
-							<a class="nav-link" href="index.html">
+							<div class="sb-sidenav-menu-heading">Menyu</div>
+							<a class="nav-link" href="az/index.html">
 								<div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
-								Home
+								Baş səhifə
 							</a>
-							<a class="nav-link active" href="converter.html">
+							<a class="nav-link active" href="az/converter.html">
 								<div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-								Converter
+								Konvertor
 							</a>
 
-                            <div class="sb-sidenav-menu-heading">Projects</div>
+                            <div class="sb-sidenav-menu-heading">Layihələr</div>
 							<a class="nav-link" href="https://packagist.org/packages/irrevion/science" target="_blank">
 								<div class="sb-nav-link-icon"><i class="fa-solid fa-atom"></i></div>
 								Science PHP
@@ -93,7 +95,7 @@ gtag('config', 'G-VNP0TJTCGW');
 							</a>
 							<a class="nav-link" href="https://games.irrevion.dp.ua/penguin-on-iceberg/" target="_blank">
 								<div class="sb-nav-link-icon"><i class="fa-solid fa-gamepad"></i></div>
-								Penguin on Iceberg
+								Penguin@Iceberg
 							</a>
                         </div>
                     </div>
@@ -102,29 +104,29 @@ gtag('config', 'G-VNP0TJTCGW');
             <div id="layoutSidenav_content">
                 <main class="mb-4">
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Converter</h1>
+                        <h1 class="mt-4">Konvertor</h1>
 
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                            <li class="breadcrumb-item"><i class="fa-solid fa-laptop-code"></i> Apps</li>
-                            <li class="breadcrumb-item active"><i class="fas fa-tachometer-alt"></i> Converter</li>
+                            <li class="breadcrumb-item"><a href="az/index.html"><i class="fas fa-home"></i> Baş səhifə</a></li>
+                            <li class="breadcrumb-item"><i class="fa-solid fa-laptop-code"></i> Tədbiqlər</li>
+                            <li class="breadcrumb-item active"><i class="fas fa-tachometer-alt"></i> Konvertor</li>
                         </ol>
 
                         <div class="card mb-4">
                             <div class="card-body">
-<img src="app/public/img/astrolabia7.jpg" alt="Icon of converter application with astrolabia and scales" class="float-end img-thumbnail mini" />
+<img src="app/public/img/astrolabia7.jpg" alt="Astrolabiya və tərəzi ilə konvertor tətbiqinin nişanı" class="float-end img-thumbnail mini" />
 
 <p>
-<strong>The converter is designed to transform physical quantities from one unit of measurement to another. Try it <a href="https://science.irrevion.dp.ua/Converter" target="_blank">🌍 here</a>.</strong>
+<strong>Konvertor fiziki kəmiyyətləri bir ölçü vahidindən digərinə çevirmək üçün nəzərdə tutulub. <a href="https://science.irrevion.dp.ua/Converter" target="_blank">🌍 Burada sına.</a></strong>
 </p>
 <p>
-At first glance, most operating systems already come with a calculator that can handle conversions between various scales. So, why create another one? With just two clicks, you can find out that 9 Mach 🚀 equals 5953.927 🛳 knots or 12.46 jet ✈ airplanes. And did you know that a long ton equals 0.25 🐘 elephants?
+İlk baxışdan, əksər əməliyyat sistemlərində müxtəlif miqyaslar arasında dəyər çevrilməsi funksiyası olan kalkulyator artıq mövcuddur. Bəs, niyə yenisi lazımdır? Sadəcə iki kliklə öyrənə bilərsiniz ki, 9 Max 🚀 5953.927 🛳 dəniz düyünlərinə və ya 12.46 reaktiv ✈ təyyarəsinə bərabərdir. Üstəlik, uzun tonun içində 0.25 🐘 fil var!
 </p>
 <p>
-But what if you need to convert 🌌 gigaparsecs into meters? Or transform mass from ☀ solar units into kilograms? For such cases, there are excellent tools like <a href="https://www.unitconverters.net/" target="_blank">🌍&nbsp;unitconverters.net</a>.
+Amma 🌌 gigaparsekləri metrlərə çevirmək lazım gəlsə nə edəcəksiniz? Və ya massanı ☀ Günəş vahidlərindən kiloqrama çevirmək istəsəniz? Bunun üçün <a href="https://www.unitconverters.net/" target="_blank">🌍&nbsp;unitconverters.net</a> kimi mükəmməl həllər də mövcuddur.
 </p>
 <p>
-The goal of creating <a href="https://science.irrevion.dp.ua/Converter" target="_blank">this ⏲ converter</a> was to offer a user-friendly and streamlined interface while maintaining high precision in results... and more. The converter is a byproduct of the PHP library <a href="https://github.com/irrevion/science" target="_blank">⚛️ irrevion/science</a>, which allows for easy handling and conversion of values across different systems of measurement. For example:<br />
+Bu <a href="https://science.irrevion.dp.ua/Converter" target="_blank">⏲ konvertorun</a> yaradılmasında məqsəd, nəticələrin yüksək dəqiqliyini qoruyaraq, sadə və yüklənməmiş bir interfeys təqdim etmək idi... və yalnız bu deyil. Konvertor, <a href="https://github.com/irrevion/science" target="_blank">⚛️ irrevion/science</a> adlı PHP kitabxanasının bir məhsuludur və bu kitabxana müxtəlif ölçü sistemləri ilə işləməyi və kəmiyyətləri çevirməyi asanlaşdırır. Məsələn:<br />
 
 <pre>
 <code data-language="php" class="language-php">
@@ -137,25 +139,25 @@ print "$x is $y \n";
 </code>
 </pre>
 
-This code will output:
+Bu kod aşağıdakı nəticəni verəcək:
 <samp>250000000 ly is 76650348.446388 pc</samp>.
 
 </p>
 <p>
-This module was used to develop the API that powers the converter's calculations.
-A complete list of all available quantities can be found in the <a href="https://irrevion.github.io/science/docs/Physics/Entities/Quantity.html" target="_blank">📖 documentation</a>, which is constantly being updated.
+Bu modul konvertorda istifadə edilən hesablamalar üçün API-nin hazırlanmasında istifadə edilib.
+Bütün mövcud kəmiyyətlərin tam siyahısını <a href="https://irrevion.github.io/science/docs/Physics/Entities/Quantity.html" target="_blank">📖 sənədləşdirmədə</a> tapa bilərsiniz, bu siyahı daim yenilənir.
 </p>
 <p>
-The converter doesn’t aim to include every historical, national, outdated, or obsolete unit of measurement. The focus is on molecular and quantum physics, astronomy, and practically used unit systems.
+Konvertorun qayəsi mövcud və ya mövcud olmuş bütün ölçü miqyaslarını, milli, köhnəlmiş və istifadə olunmayan vahidləri daxil etmək deyil. Əsas diqqət molekulyar və kvant fizikasına, astronomiyaya və praktikada qəbul olunmuş ölçü sistemlərinə yönəldilib.
 </p>
 <p>
-After all, 📐 size isn't everything — scale matters far more.
+Axı, 📐 ölçü əsas deyil — miqyas daha vacibdir.
 </p>
 
 <hr />
 
-<p>🖼 Image is generated by <a href="https://x.com/i/grok?focus=1" target="_blank">🌍 Grok</a></p>
-<p>📄 Text is edited by <a href="https://chatgpt.com/" target="_blank">🌍 ChatGPT</a></p>
+<p>🖼 Şəkillərin hazırlaması <a href="https://x.com/i/grok?focus=1" target="_blank">🌍 Grok</a></p>
+<p>📄 Mətnlərin redaktə edilməsi <a href="https://chatgpt.com/" target="_blank">🌍 ChatGPT</a></p>
                             </div>
                         </div>
                     </div>
