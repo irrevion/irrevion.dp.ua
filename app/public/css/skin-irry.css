@@ -114,11 +114,17 @@
     h1, h2, h3, h4 {
 		color: #0698a5;
 	}
+	.navbar {
+		background-color: #0c2f48;
+	}
 	.sb-sidenav-menu .nav-link {
 		/* color: #aaa; */
 	}
 	.dropdown .dropdown-menu {
 		background-color: #212529;
+	}
+	.dropdown .dropdown-menu .dropdown-item.active {
+		background-color: #0c2f48;
 	}
 	.dropdown .dropdown-menu .dropdown-item:hover {
 		background-color: #3c4146;
@@ -139,6 +145,6 @@
 		color: #0ff;
 	}
 	footer {
-		background-color: #202428; /* #082e48; */ color: #0698a5;
+		background-color: #14181d; color: #0698a5; border-top: 1px solid #000;
 	}
 }
