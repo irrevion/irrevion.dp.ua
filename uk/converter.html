@@ -40,7 +40,7 @@ gtag('config', 'G-VNP0TJTCGW');
     <body class="sb-nav-fixed skin-irry">
         <nav class="sb-topnav navbar navbar-expand navbar-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand" href="index.html"><img src="app/public/img/logo.png" alt="Irrevion Science" class="logo" /></a>
+            <a class="navbar-brand" href="index.html"><img src="app/public/img/logo-slim.png" alt="Irrevion Science logo" class="logo logo-light" /><img src="app/public/img/logo.png" alt="Irrevion Science dark logo" class="logo logo-dark" /></a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
 
@@ -128,20 +128,15 @@ gtag('config', 'G-VNP0TJTCGW');
 <p>
 Метою створення цього <a href="https://science.irrevion.dp.ua/Converter" target="_blank">⏲ конвертера</a> було забезпечення зручного, ненавантаженого інтерфейсу із збереженням високої точності результатів... і не тільки. Конвертер є побічним продуктом PHP-бібліотеки <a href="https://github.com/irrevion/science" target="_blank">⚛️ irrevion/science</a>, яка дозволяє легко працювати з величинами і перетворювати їх між різними системами одиниць вимірювання. Наприклад:<br />
 
-<pre>
-<code data-language="php" class="language-php">
-use irrevion\science\Physics\Entities\Quantity;
+<pre><code data-language="php" class="language-php">use irrevion\science\Physics\Entities\Quantity;
 use irrevion\science\Physics\Unit\{SI, Planck, IAU, CGS, Natural, NonStandard, Imperial, USC};
 
 $x = new Quantity(250e6, IAU::light_year);
 $y = $x->convert(IAU::parsec);
-print "$x is $y \n";
-</code>
-</pre>
+print "$x is $y \n";</code></pre>
 
 Цей код виведе:
 <samp>250000000 ly is 76650348.446388 pc</samp>.
-
 </p>
 <p>
 Цей модуль був використаний для розробки API, яке забезпечує обчислення в конвертері.
